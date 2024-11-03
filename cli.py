@@ -9,7 +9,7 @@ logging.basicConfig(
 
 
 @click.command()
-@click.option('--site', required=True, help='URL сайта для сканирования.')
+@click.option('--site', required=True, help='URL сайта для сканирования или файл с URL\'ами в формате .txt')
 @click.option('--depth', default=2, help='Глубина сканирования (по умолчанию 3).')
 @click.option('--path', default="", help='Папка, куда скачивать сайты (по умолчанию - эта)')
 @click.option('--maxsize', default=1024, help='Максимальный размер файлов для скачивания в КБ'

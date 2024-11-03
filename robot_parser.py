@@ -1,5 +1,5 @@
 import re
-import subprocess
+import requests
 
 
 class RobotParser:
@@ -16,9 +16,10 @@ class RobotParser:
         }
 
     def parse(self):
-        f = subprocess.Popen(
-            ['curl', '--basic', self.robots_txt_path], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-        text = str(f.stdout.read()).split('\n')
+        if not self.robots_txt_path:
+            return
+
+        text = str(requests.get(self.robots_txt_path).text).split('\n')
         for i in range(len(text)):
             if not text[i].startswith('User-agent'):
                 continue

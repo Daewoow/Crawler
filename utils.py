@@ -1,7 +1,8 @@
+import aiohttp
+import os
 import re
 import requests
-import os
-import aiohttp
+
 from urllib.request import urlopen
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
@@ -45,7 +46,7 @@ class Utils:
                     continue
 
                 filename, ext = os.path.splitext(os.path.basename(resource[inner]))
-                if "all" not in rtypes and ntypes != [""] and ext not in rtypes or ext in ntypes :
+                if "all" not in rtypes and ntypes != [""] and ext not in rtypes or ext in ntypes:
                     continue
                 filename = re.sub(r'\W+', '', filename) + ext
                 file_url = urljoin(url, resource.get(inner))

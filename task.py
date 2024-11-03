@@ -1,8 +1,8 @@
-import re
 from dataclasses import dataclass
 from utils import Utils
 from robot_parser import RobotParser
 import logging
+import re
 
 
 logging.basicConfig(

@@ -1,10 +1,10 @@
 import asyncio
 import logging
+from bs4 import BeautifulSoup
+from task import FetchTask
 from typing import Optional
 from urllib.parse import urljoin
-from bs4 import BeautifulSoup
 from utils import Utils
-from task import FetchTask
 
 logging.basicConfig(
     format='%(asctime)s %(levelname)s:%(message)s',
