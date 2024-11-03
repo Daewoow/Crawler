@@ -2,18 +2,24 @@ import re
 import requests
 import os
 import aiohttp
+from urllib.request import urlopen
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 
 class Utils:
     @staticmethod
-    def save_page(url, page_path='page'):
+    def save_page(url, maxsize, rtypes, ntypes, nurls, page_path='page'):
         session = requests.Session()
         response = session.get(url)
         soup = BeautifulSoup(response.text, "html.parser")
         path, extension = os.path.splitext(page_path)
         folder = path + '_files'
+
+        for url in nurls:
+            if url in folder:
+                return
+
         if not os.path.exists(folder):
             os.mkdir(folder)
         tags_inner = {
@@ -21,8 +27,9 @@ class Utils:
             'link': 'href',
             'script': 'src'
         }
+
         for tag, inner in tags_inner.items():
-            Utils.save_rename(soup, folder, session, url, tag, inner)
+            Utils.save_media(soup, folder, session, url, tag, inner, maxsize, rtypes, ntypes, nurls)
             break
         os.chdir(folder)
         with open(path + '.html', 'wb') as file:
@@ -30,14 +37,27 @@ class Utils:
         os.chdir('../')
 
     @staticmethod
-    def save_rename(soup, folder, session, url, tag, inner):
+    def save_media(soup, folder, session, url, tag, inner, maxsize, rtypes, ntypes, nurls):
         for resource in soup.findAll(tag):
             if resource.has_attr(inner):
+                if (resource[inner].startswith('http') and
+                        int(urlopen(resource[inner]).info()['Content-Length']) > maxsize * 1024):
+                    continue
+
                 filename, ext = os.path.splitext(os.path.basename(resource[inner]))
+                if "all" not in rtypes and ntypes != [""] and ext not in rtypes or ext in ntypes :
+                    continue
                 filename = re.sub(r'\W+', '', filename) + ext
                 file_url = urljoin(url, resource.get(inner))
                 filepath = os.path.join(folder, filename)
                 resource[inner] = os.path.join(os.path.basename(folder), filename)
+
+                for url in nurls:
+                    if url in resource[inner]:
+                        print(url, resource[inner])
+                        print(url in resource[inner])
+                        continue
+
                 try:
                     if not os.path.isfile(filepath):
                         with open(filepath, 'wb') as file:

@@ -14,8 +14,10 @@ logging.basicConfig(
 class FetchTask:
     maximum_depth: int
     tid: int
+    path: str
+    maxsize: int
 
-    async def perform(self, crawler, worker_id):
+    async def perform(self, crawler, worker_id, rtypes, ntypes, nurls):
         depth = 0
         while crawler.urls_to_visit and depth <= self.maximum_depth:
 
@@ -33,8 +35,8 @@ class FetchTask:
                 return
 
             logging.info(f' {worker_id} Crawling now: {url}')
-            name_folder = url
-            Utils.save_page(url, re.sub(r'\W+', '_', name_folder))
+            name_folder = self.path + url if self.path.endswith('/') else self.path + '/' + url
+            Utils.save_page(url, self.maxsize, rtypes, ntypes, nurls, re.sub(r'\W+', '_', name_folder))
 
             try:
                 await crawler.crawl(url)
