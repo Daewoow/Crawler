@@ -1,7 +1,7 @@
 import asyncclick as click
 import asyncio
 import logging
-from crawler import Crawler
+from Crawlers_engine.crawler import Crawler
 
 logging.basicConfig(
     format='%(asctime)s %(levelname)s:%(message)s',

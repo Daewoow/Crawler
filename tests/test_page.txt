@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <!-- VK retargeting -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-151031-4AxJL';</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1406673302952636');
+    fbq('track', 'PageView');
+</script>
+
+<noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1406673302952636&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+        <meta name="yandex-verification" content="96ff53330ecac8da"/>
+</head>
+<body>
+
+
+<script>
+        window.meta = {
+                title: "&#x413;&#x43B;&#x430;&#x432;&#x43D;&#x430;&#x44F; &#x43D;&#x430; ulearn.me",
+                description: "&#x418;&#x43D;&#x442;&#x435;&#x440;&#x430;&#x43A;&#x442;&#x438;&#x432;&#x43D;&#x44B;&#x435; &#x443;&#x447;&#x435;&#x431;&#x43D;&#x44B;&#x435; &#x43E;&
+#x43D;&#x43B;&#x430;&#x439;&#x43D;-&#x43A;&#x443;&#x440;&#x441;&#x44B; &#x43F;&#x43E;&#xA0;&#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44E;",
+                keywords: "",
+                imageUrl: "/Content/logo.png"
+        }
+</script>
+
+<div class="main-page">
+        <div class="container body-content">
+                <div class="jumbotron">
+                        <img src="/Content/StartPageJumbotron.png">
+                </div>
+
+                <div class="courses-grid">
+                        <div class="course-tile">
+                                <h2>Основы программирования на примере C#. Часть 1</h2>
+                                <p>
+                                        Длительность курса: 1 семестр, 3&ndash;6 часов в неделю.
+                                </p>
+                                <p>
+                                        Курс разработан для студентов первого года обучения компьютерных специальностей УрФУ.
+                                        Рассчитан на людей с минимальным опытом программирования и знакомит
+                                        с основами синтаксиса C# и стандартными классами .NET, с основами ООП
+                                        и базовыми алгоритмами.
+                                </p>
+                                <p><a class="btn btn-primary" href="/Course/BasicProgramming">&#x41F;&#x43E;&#x435;&#x445;&#x430;&#x43B;&#x438;</a></p>
+                        </div>
+                        <div class="course-tile">
+                                <h2>Основы программирования на примере C#. Часть 2</h2>
+                                <p>Длительность курса: 1 семестр, 3&ndash;6 часов в неделю.</p>
+                                <p>
+                                        Вторая часть курса Основы программирования на C# знакомит
+                                        с более сложными языковыми конструкциями:
+                                        обобщёнными типами (generics),
+                                        генераторами последовательностей,
+                                        LINQ,
+                                        а также с джентльменским набором алгоритмов и структур данных.
+                                        Рассчитан на людей, знакомых с основами синтаксиса C#.
+                                </p>
+                                <p><a class="btn btn-primary" href="/Course/BasicProgramming2">&#x41F;&#x43E;&#x435;&#x445;&#x430;&#x43B;&#x438;</a></p>
+                        </div>
+                        <div class="course-tile">
+                                <h2>
+                                        Проектирование <nobr>на языке C#</nobr>
+                                </h2>
+                                <p>
+                                        Длительность: 1 семестр, 1&ndash;2 часа в неделю
+                                </p>
+                                <p>
+                                        Продолжение курса «Основы программирования».
+                                        Внутри вы узнаете об&nbsp;основах объектно-ориентированного программирования
+                                        и&nbsp;шаблонах проектирования ПО. Будет полезно для тех, кто прошёл курс «Основы программирования»,
+                                        или для тех, кто уже владеет другим языком программирования.
+                                </p>
+                                <p><a class="btn btn-primary" href="/Course/CS2">&#x41F;&#x43E;&#x435;&#x445;&#x430;&#x43B;&#x438;</a></p>
+                        </div>
+                        <div class="course-tile">
+                                <h2>Основы компьютерной безопасности</h2>
+                                <p>Длительность: 1 семестр, 2–6 часов в неделю</p>
+                                <p>
+                                        Курс разработан для студентов первого и второго года обучения компьютерных специальностей ИМКН УрФУ.
+                                        Рассчитан на людей с минимальным опытом программирования.
+                                </p>
+                                <p><a class="btn btn-primary" href="/Course/Hackerdom">&#x41F;&#x43E;&#x435;&#x445;&#x430;&#x43B;&#x438;</a></p>
+                        </div>
+                        <div class="course-tile">
+                                <h2>Практикум по языку запросов LINQ</h2>
+                                <p>
+                                Длительность миникурса: 2&ndash;4 часа.
+                                <p>
+                                        В C# существует набор методов для декларативного описания
+                                        манипуляции с данными — LINQ.
+                                        Использование этих методов позволят обойтись без циклов,
+                                        а следовательно делает код понятнее, короче.
+                                        Но просто знать про LINQ мало, нужно привыкнуть его использовать.
+
+                                        Этот мини-курс знакомит с основами LINQ
+                                        на тщательно подобранных примерах и задачах —
+                                        первый шаг к привычке писать код декларативно.
+                                </p>
+                                <p>
+                                        Полезно и тем, кто поверхностно уже знаком с LINQ.
+                                </p>
+                                <p><a class="btn btn-primary" href="/Course/Linq">&#x41F;&#x43E;&#x435;&#x445;&#x430;&#x43B;&#x438;</a></p>
+                        </div>
+                        <div class="course-tile">
+                                <h2>
+                                        Тестирование&nbsp;ПО
+                                </h2>
+                                <p>
+                                        Длительность: 1 месяц, 3&ndash;4 часа в неделю
+                                </p>
+                                <p>
+                                        Курс дает базовые знания о&nbsp;тестировании программного обеспечения,
+                                        знакомит с&nbsp;процессом разработки, инструментами и&nbsp;теорией тестирования.
+                                </p>
+                                <p><a class="btn btn-primary" href="/Course/testing-2022">&#x41F;&#x43E;&#x435;&#x445;&#x430;&#x43B;&#x438;</a></p>
+                        </div>
+                        <div class="course-tile">
+                                <h2>Оценка сложности алгоритмов</h2>
+                                <p>
+                                Длительность миникурса: 2 часа.
+                                <p>
+                                        Короткий курс-практикум, развивающий навык быстрой оценки сложности
+                                        алгоритмов и кода, который ежедневно пишут программисты.
+                                </p>
+                                <p>
+                                        Курс содержит самый минимум теории и построен вокруг серии хорошо
+                                        подобранных задач, демонстрирующих самые распространённые
+                                        и типовые случаи, в которых навык оценки сложности оказывается полезным.
+                                </p>
+                                <p><a class="btn btn-primary" href="/Course/complexity">&#x41F;&#x43E;&#x435;&#x445;&#x430;&#x43B;&#x438;</a></p>
+                        </div>
+                        <div class="course-tile">
+                                <h2>Введение в функциональное программирование</h2>
+                                <p>Длительность: 1 семестр, 3&ndash;6 часов в неделю</p>
+                                <p>
+                                        Разработан для студентов 2-3 курса ФИИТ УрФУ.
+                                </p>
+                                <p>
+                                        Курс для тех, кто умеет программировать,
+                                        но ни разу не сталкивался с функциональным программированием.
+                                        Вы познакомитесь с основами лямбда-исчисления и базовыми концепциями
+                                        функционального программирования на примере языка Haskell.
+                                </p>
+                                <p><a class="btn btn-primary" href="/Course/fpintroduction">&#x41F;&#x43E;&#x435;&#x445;&#x430;&#x43B;&#x438;</a></p>
+                        </div>
+                        <div class="course-tile">
+                                <h2>Введение в математику</h2>
+                                <p>Длительность: 7 тем, 3&ndash;5 часов на тему</p>
+                                <p>
+                                        Школьная математика достаточно далека от настоящей математики.
+                                        И прежде, чем осваивать ландшафт взрослой математики,
+                                        надо выучить язык, на котором предстоит это делать.
+                                        Курс знакомит с основополагающими понятиями:
+                                        множества, отношения, отображения и операции на множестве,
+                                        графы,
+                                        метод математической индукции,
+                                        основные комбинаторные схемы,
+                                        элементы математической логики.
+                                </p>
+                                <p><a class="btn btn-primary" href="/Course/math">&#x41F;&#x43E;&#x435;&#x445;&#x430;&#x43B;&#x438;</a></p>
+                        </div>
+                        <div class="course-tile">
+                                <h2>The Clean Code Game</h2>
+                                <p>Длительность: 10–20 минут</p>
+                                <p>
+                                        Небольшая игра-тренажер на интерактивных примерах знакомит с базовыми правилами хорошего кода.
+                                        Качественные имена, стиль именования, комментарии, разбиение кода на методы.
+                                </p>
+                                <p>
+                                        <a class="btn btn-primary" href="https://cleancodegame.github.io">Поехали</a>
+                                </p>
+                        </div>
+                </div>
+
+                <footer>
+        <div>
+                <p>
+                        Ulearn.me — платформа с интерактивными онлайн-курсами, которую сделали в <a href="https://kontur.ru/career">Контуре.</a>
+                </p>
+                <p>
+                        Если вам нравятся наши курсы, посмотрите, что еще мы делаем <a href="https://tech.kontur.ru/">для разработчиков.</a>
+                </p>
+                <p><a href="/Home/Terms">&#x423;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x44F; &#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44F; &#x43F;&#x43B;&#x430;&#x442;&#x444;&#x43E;&#x440;&#x43C;&#x44B;.</a> </p>
+                <p>С&nbsp;вопросами и пожеланиями пишите на&nbsp;<a href="mailto:support@ulearn.me">support@ulearn.me</a>.</p>
+        </div>
+</footer>
+        </div>
+</div>
+
+
+
+</body>
+</html>
+2024-11-07 16:40:32,631 INFO: 1 Crawling now: https://ulearn.me/Course/BasicProgramming
+<!DOCTYPE html>
+<html>
+<head>
+        <!-- VK retargeting -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-151031-4AxJL';</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1406673302952636');
+    fbq('track', 'PageView');
+</script>
+
+<noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1406673302952636&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+        <meta name="yandex-verification" content="96ff53330ecac8da"/>
+</head>
+<body>
+
+
+<script>
+        window.meta = {
+                title: "&#x41E;&#x441;&#x43D;&#x43E;&#x432;&#x44B; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44F;:
+ &#x41A;&#x440;&#x430;&#x442;&#x43A;&#x430;&#x44F; &#x441;&#x43F;&#x440;&#x430;&#x432;&#x43A;&#x430; &#x43F;&#x435;&#x440;&#x435;&#x434; &#x43D;&#x430;&#x447;&#x430;&#x43B;&#x43E;&#x43C; &#x43D;&#x430; ulearn.me",
+                description: "&#x418;&#x43D;&#x442;&#x435;&#x440;&#x430;&#x43A;&#x442;&#x438;&#x432;&#x43D;&#x44B;&#x435; &#x443;&#x447;&#x435;&#x431;&#x43D;&#x44B;&#x435; &#x43E;&
+#x43D;&#x43B;&#x430;&#x439;&#x43D;-&#x43A;&#x443;&#x440;&#x441;&#x44B; &#x43F;&#x43E;&#xA0;&#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44E;",
+                keywords: "",
+                imageUrl: "/Content/logo.png"
+        }
+</script>
+
+
+
+
+<div class="slide">
+
+<div class="modal fade" id="LoginForContinue" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title">Практика, практика и еще раз практика!</h4>
+                        </div>
+                        <div class="modal-body">
+                                <p>
+                                        <a href="/Login?returnUrl=%2FCourse%2Fbasicprogramming%2FKratkaya_spravka_pered_nachalom_69a2e121-e58f-4cd0-8221-7affb7dc796e">&#x412;&#x43E;&#x439;&#x434;&#x438;&#x442;&#x435;</a> или
+                                        <a href="/Account/Register?returnUrl=%2FCourse%2Fbasicprogramming%2FKratkaya_spravka_pered_nachalom_69a2e121-e58f-4cd0-8221-7affb7dc796e">&#x437;&#x430;&#x440;&#x435;&#x433;&#x438;&#x441;&#x442;&#x440;&#x438;&#x440;&#x443;&#x439;&#x442;&#x435;&#x441;&#x44C;</a>,
+                                        чтобы отвечать на тесты и решать задачи.
+                                </p>
+                        </div>
+                </div>
+        </div>
+</div></div>
+
+
+
+
+
+</body>
+</html>
+2024-11-07 16:40:33,109 INFO: 1 Crawling now: https://ulearn.me/Course/BasicProgramming2
+<!DOCTYPE html>
+<html>
+<head>
+        <!-- VK retargeting -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-151031-4AxJL';</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1406673302952636');
+    fbq('track', 'PageView');
+</script>
+
+<noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1406673302952636&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+        <meta name="yandex-verification" content="96ff53330ecac8da"/>
+</head>
+<body>
+
+
+<script>
+        window.meta = {
+                title: "&#x41E;&#x441;&#x43D;&#x43E;&#x432;&#x44B; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44F; 2: &#x421;&#x442;&#x435;&#x43A;&#x438; &#x438; &#x43E;&#x447;&#x435;&#x440;&#x435;&#x434;&#x438; &#x43D;&#x430; ulearn.me",
+                description: "&#x418;&#x43D;&#x442;&#x435;&#x440;&#x430;&#x43A;&#x442;&#x438;&#x432;&#x43D;&#x44B;&#x435; &#x443;&#x447;&#x435;&#x431;&#x43D;&#x44B;&#x435; &#x43E;&
+#x43D;&#x43B;&#x430;&#x439;&#x43D;-&#x43A;&#x443;&#x440;&#x441;&#x44B; &#x43F;&#x43E;&#xA0;&#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44E;",
+                keywords: "",
+                imageUrl: "/Content/logo.png"
+        }
+</script>
+
+
+
+
+<div class="slide">
+
+<div class="modal fade" id="LoginForContinue" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title">Практика, практика и еще раз практика!</h4>
+                        </div>
+                        <div class="modal-body">
+                                <p>
+                                        <a href="/Login?returnUrl=%2FCourse%2Fbasicprogramming2%2FSteki_i_ocheredi_48016626-87ae-411d-ae97-f7a49e465dbc">&#x412;&#x43E;&#x439;&#x434;&#x438;&#x442;&#x435;</a> или
+                                        <a href="/Account/Register?returnUrl=%2FCourse%2Fbasicprogramming2%2FSteki_i_ocheredi_48016626-87ae-411d-ae97-f7a49e465dbc">&#x437;&#x430;&#x440;&#x435;&#x433;&#x438;&#x441;&#x442;&#x440;&#x438;&#x440;&#x443;&#x439;&#x442;&#x435;&#x441;&#x44C;</a>,
+                                        чтобы отвечать на тесты и решать задачи.
+                                </p>
+                        </div>
+                </div>
+        </div>
+</div></div>
+
+
+
+
+
+</body>
+</html>
+2024-11-07 16:40:33,649 INFO: 1 Crawling now: https://ulearn.me/Course/CS2
+<!DOCTYPE html>
+<html>
+<head>
+        <!-- VK retargeting -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-151031-4AxJL';</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1406673302952636');
+    fbq('track', 'PageView');
+</script>
+
+<noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1406673302952636&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+        <meta name="yandex-verification" content="96ff53330ecac8da"/>
+</head>
+<body>
+
+
+<script>
+        window.meta = {
+                title: "&#x41F;&#x440;&#x43E;&#x435;&#x43A;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x435; &#x43D;&#x430; &#x44F;&#x437;&#x44B;&#x43A;&#x435; C#: &#x412;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x435; &#x43D;&#x430; ulearn.me",
+                description: "&#x418;&#x43D;&#x442;&#x435;&#x440;&#x430;&#x43A;&#x442;&#x438;&#x432;&#x43D;&#x44B;&#x435; &#x443;&#x447;&#x435;&#x431;&#x43D;&#x44B;&#x435; &#x43E;&
+#x43D;&#x43B;&#x430;&#x439;&#x43D;-&#x43A;&#x443;&#x440;&#x441;&#x44B; &#x43F;&#x43E;&#xA0;&#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44E;",
+                keywords: "",
+                imageUrl: "/Content/logo.png"
+        }
+</script>
+
+
+
+
+<div class="slide">
+
+<div class="modal fade" id="LoginForContinue" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title">Практика, практика и еще раз практика!</h4>
+                        </div>
+                        <div class="modal-body">
+                                <p>
+                                        <a href="/Login?returnUrl=%2FCourse%2Fcs2%2FVvedenie_7df81bac-f52c-4219-8663-4d215bafbc7a">&#x412;&#x43E;&#x439;&#x434;&#x438;&#x442;&#x435;</a> или
+                                        <a href="/Account/Register?returnUrl=%2FCourse%2Fcs2%2FVvedenie_7df81bac-f52c-4219-8663-4d215bafbc7a">&#x437;&#x430;&#x440;&#x435;&#x433;&#x438;&#x441;&#x442;&#x440;&#x438;&#x440;&#x443;&#x439;&#x442;&#x435;&#x441;&#x44C;</a>,
+                                        чтобы отвечать на тесты и решать задачи.
+                                </p>
+                        </div>
+                </div>
+        </div>
+</div></div>
+
+
+
+
+
+</body>
+</html>

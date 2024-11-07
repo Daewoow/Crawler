@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 
 class Utils:
     @staticmethod
-    def save_page(url, maxsize, rtypes, ntypes, nurls, page_path='page'):
+    def save_page(url, maxsize, rtypes, ntypes, nurls, page_path=''):
         session = requests.Session()
         response = session.get(url)
         soup = BeautifulSoup(response.text, "html.parser")
@@ -20,6 +20,9 @@ class Utils:
         for url in nurls:
             if url in folder:
                 return
+
+        if rtypes == [] or ntypes == ["All"]:
+            return
 
         if not os.path.exists(folder):
             os.mkdir(folder)
@@ -55,8 +58,6 @@ class Utils:
 
                 for url in nurls:
                     if url in resource[inner]:
-                        print(url, resource[inner])
-                        print(url in resource[inner])
                         continue
 
                 try:
@@ -74,11 +75,15 @@ class Utils:
         return urls
 
     @staticmethod
-    def generate_numbers():
-        num = 0
-        while True:
-            yield num
-            num += 1
+    def get_linked_urls(url, html):
+        soup = BeautifulSoup(html, 'html.parser')
+        for link in soup.find_all('a'):
+            path = link.get('href')
+            if path and path.startswith('/'):
+                path = urljoin(url, path)
+            if path and path.startswith('mail'):
+                continue
+            yield path
 
     @staticmethod
     async def download_url(url):

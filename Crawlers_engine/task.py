@@ -1,6 +1,6 @@
 from dataclasses import dataclass
-from utils import Utils
-from robot_parser import RobotParser
+from .utils import Utils
+from .robot_parser import RobotParser
 import logging
 import re
 

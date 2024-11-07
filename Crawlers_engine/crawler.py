@@ -1,10 +1,8 @@
 import asyncio
 import logging
-from bs4 import BeautifulSoup
-from task import FetchTask
+from .task import FetchTask
 from typing import Optional
-from urllib.parse import urljoin
-from utils import Utils
+from .utils import Utils
 
 logging.basicConfig(
     format='%(asctime)s %(levelname)s:%(message)s',
@@ -58,24 +56,13 @@ class Crawler:
                 a.append(asyncio.create_task(self._worker(task, task.tid)))
             await asyncio.sleep(self.interval)
 
-    @staticmethod
-    def get_linked_urls(url, html):
-        soup = BeautifulSoup(html, 'html.parser')
-        for link in soup.find_all('a'):
-            path = link.get('href')
-            if path and path.startswith('/'):
-                path = urljoin(url, path)
-            if path and path.startswith('mail'):
-                continue
-            yield path
-
     def add_url_to_visit(self, url):
         if url not in self.visited_urls and url not in self.urls_to_visit:
             self.urls_to_visit.append(url)
 
     async def crawl(self, url):
         html = await Utils.download_url(url)
-        for current_url in self.get_linked_urls(url, html):
+        for current_url in Utils.get_linked_urls(url, html):
             if (current_url and current_url.find('captcha') == -1
                     and not current_url.endswith("rst")
                     and not current_url.startswith("../")):
