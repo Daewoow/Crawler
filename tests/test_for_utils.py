@@ -2,7 +2,7 @@ import aiohttp
 import os
 import pytest
 
-from Crawler.Crawlers_engine.utils import Utils
+from Crawlers_engine.utils import Utils
 
 
 @pytest.fixture(scope="module")
@@ -27,6 +27,5 @@ async def test_get_urls_from_site(async_download_page):
 
 @pytest.mark.asyncio
 async def test_downloading_page():
-    with pytest.raises(aiohttp.ClientConnectorError):
-        current = await Utils.download_url("https://ulearn/me")
-        assert current
+    current = await Utils.download_url("https://ulearn/me")
+    assert current is None

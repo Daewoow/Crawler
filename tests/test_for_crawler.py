@@ -2,7 +2,7 @@ import asyncio
 import os
 import pytest
 import shutil
-from Crawler.Crawlers_engine.crawler import Crawler
+from Crawlers_engine.crawler import Crawler
 
 
 def remove_folders_by_names(directory, folder_names):

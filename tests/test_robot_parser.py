@@ -1,4 +1,4 @@
-from Crawler.Crawlers_engine.robot_parser import RobotParser
+from Crawlers_engine.robot_parser import RobotParser
 
 
 def test_robot_parser():
