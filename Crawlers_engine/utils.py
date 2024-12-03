@@ -11,8 +11,19 @@ from bs4 import BeautifulSoup
 class Utils:
     @staticmethod
     def save_page(url, maxsize, rtypes, ntypes, nurls, page_path=''):
+        """
+        Сохраняет страницу
+        :param: maxsize: Максимальная величина файла
+        :param: rtypes: Типы файлов, которые хочется скачивать
+        :param: ntypes: Типы файлов, которые не хочется скачивать
+        :param: page_path: Путь, куда сохранять
+        """
         session = requests.Session()
-        response = session.get(url)
+        try:
+            response = session.get(url)
+        except Exception as e:
+            return
+
         soup = BeautifulSoup(response.text, "html.parser")
         path, extension = os.path.splitext(page_path)
         folder = path + '_files'
@@ -42,6 +53,18 @@ class Utils:
 
     @staticmethod
     def save_media(soup, folder, session, url, tag, inner, maxsize, rtypes, ntypes, nurls):
+        """
+        Сохраняет контент страницы
+        :param: soup: BeautifulSoup
+        :param: folder: Куда сохранять
+        :param: session: Текущая сессия
+        :param: tag: img/link/src
+        :param: inner: Внутренности сайта
+        :param: maxsize: Максимальный размер файла
+        :param: rtypes: Типы файлов, которые хочется скачивать
+        :param: ntypes: Типы файлов, которые не хочется скачивать
+        :param: page_path: Путь, куда сохранять
+        """
         for resource in soup.findAll(tag):
             if resource.has_attr(inner):
                 if (resource[inner].startswith('http') and
@@ -49,7 +72,8 @@ class Utils:
                     continue
 
                 filename, ext = os.path.splitext(os.path.basename(resource[inner]))
-                if "all" not in rtypes and ntypes != [""] and ext not in rtypes or ext in ntypes:
+
+                if "all" not in rtypes and ntypes != [""] and ext.lower() not in rtypes or ext.lower() in ntypes:
                     continue
                 filename = re.sub(r'\W+', '', filename) + ext
                 file_url = urljoin(url, resource.get(inner))
@@ -70,12 +94,23 @@ class Utils:
 
     @staticmethod
     def get_urls_from_file(file):
+        """
+        Получает все ссылки из файла
+        :param file: Файл с ссылками
+        :return: Массив ссылок
+        """
         with open(file) as f:
             urls = re.split(r'\n', f.read())
         return urls
 
     @staticmethod
     def get_linked_urls(url, html):
+        """
+        Получает все ссылки из содержимого страницы
+        :param url: Ссылка
+        :param html: Содержимое страницы
+        :return: Все ссылки
+        """
         soup = BeautifulSoup(html, 'html.parser')
         for link in soup.find_all('a'):
             path = link.get('href')
@@ -87,9 +122,17 @@ class Utils:
 
     @staticmethod
     async def download_url(url):
+        """
+        Загружает содержимое страницы
+        :param url: Ссылка, откуда загружаем
+        :return: Содержимое страницы
+        """
         try:
             async with aiohttp.ClientSession() as session:
-                async with session.get(url) as response:
-                    return await response.text()
+                try:
+                    async with session.get(url) as response:
+                        return await response.text()
+                except Exception as e:
+                    return
         except ConnectionRefusedError:
             pass

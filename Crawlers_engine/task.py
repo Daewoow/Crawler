@@ -18,6 +18,13 @@ class FetchTask:
     maxsize: int
 
     async def perform(self, crawler, worker_id, rtypes, ntypes, nurls):
+        """
+        param: crawler: Краулер
+        param: worker_id: Какой бот сейчас обрабатывает запрос
+        param: rtypes: Типы файлов, которые хочется скачивать
+        param: ntypes: Типы файлов, которые не хочется скачивать
+        param: nurls: Ссылки, с которых не хочется ничег скачивать
+        """
         depth = 0
         while crawler.urls_to_visit and depth <= self.maximum_depth:
 

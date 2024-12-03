@@ -12,19 +12,19 @@ logging.basicConfig(
 class Crawler:
     def __init__(self, file, depth: int, rtypes: str, ntypes: str, nurls: str,
                  path_to_save: str, maxsize: int, bots: int = 4):
-        self.file = file
+        if file.endswith('.txt') or file.startswith("http"):
+            self.file = file
+        else:
+            raise ValueError("File must be at format .txt or begins with http")
         self.urls_to_visit = Utils.get_urls_from_file(self.file) if self.file.endswith('txt') else [self.file]
         self.visited_urls = []
         self.max_rate = 3
         self.interval = 5
-        self.concurrent_level = 3
         self.is_crawled = False
         self.tasks_queue = asyncio.Queue()
         self._scheduler_task: Optional[asyncio.Task] = None
-        self._sem = asyncio.Semaphore(self.max_rate)
         self.concurrent_workers = 0
         self.stop_event = asyncio.Event()
-        self.key_words = {}
         self.bots = bots
         self.depth = depth
         self.maxsize = maxsize
@@ -34,7 +34,7 @@ class Crawler:
         self.nurls = nurls.replace(',', '').split()
 
     async def _worker(self, task, tid):
-        async with self._sem:
+        async with asyncio.Semaphore(self.max_rate):
             self.concurrent_workers += 1
             await task.perform(self, tid, self.rtypes, self.ntypes, self.nurls)
             self.tasks_queue.task_done()

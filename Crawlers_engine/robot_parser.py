@@ -16,6 +16,9 @@ class RobotParser:
         }
 
     def parse(self):
+        """
+        Parses the robots.txt
+        """
         if not self.robots_txt_path:
             return
 
